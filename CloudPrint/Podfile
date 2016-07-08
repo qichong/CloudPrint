@@ -1,0 +1,20 @@
+platform :ios, '7.0'
+
+inhibit_all_warnings!
+
+target :'CloudPrint' do
+    #~>2.6 代表 2.6 - 3.0 不包括3.0
+    #2.6.0 代表 2.6.0 - 2.7.0 不包括2.7.0
+pod 'AFNetworking','~> 2.6.0'
+pod 'MJExtension','~>3.0.0'
+pod 'SVProgressHUD','~> 2.0-beta'
+pod 'MJRefresh','~> 3.0.2'
+end
+
+target :'CloudPrintTests' do
+    #pod 'AFNetworking','~> 2.6'
+end
+
+target :'CloudPrintUITests' do
+    #pod 'AFNetworking','~> 2.6'
+end
